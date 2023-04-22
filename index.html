@@ -55,7 +55,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>obj.</th><th>本体Url</th><th>差分Url</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>本体Url</th><th>差分Url</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -91,7 +91,7 @@
                     
                     // url_diff
                     $("<td width='8%'>" + "<a href='" +
-                        info[i].diffurl + "' target='_blank'>" + "差" + "</a></td>").appendTo(str);
+                        info[i].url_diff + "' target='_blank'>" + "差" + "</a></td>").appendTo(str);
                     
 
                 }
