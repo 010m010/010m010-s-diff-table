@@ -169,7 +169,7 @@ function makeBMSTable(info, mark, order) {
 　　　　$("<td width='2%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0' target='_blank'><img src='./style/minir_logo.gif' border='0' alt='MinIR' /></a></td>").appendTo(str); <!-- /0 を /1 /2 に変更すると CN,HCN のIRページにリンクされます -->
 
         // タイトル
-        $("<td width='42%'>" + "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+        $("<td width='44%'>" + "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
         // アーティスト
         var astr = "";
         if(info[i].artist != "" && info[i].artist != null) {
@@ -178,21 +178,21 @@ function makeBMSTable(info, mark, order) {
 		astr = "不明";
 	}
 
-        $("<td width='23%'>" + astr + "</td>").appendTo(str);
+        $("<td width='25%'>" + astr + "</td>").appendTo(str);
 	    
 	// 本体
         if(info[i].url != "" && info[i].url != null) {
-	        $("<td width='10%'><a href='" + info[i].url + "'>" + "本体" + "</a></td>").appendTo(str);
+	        $("<td width='7%'><a href='" + info[i].url + "'>" + "本体" + "</a></td>").appendTo(str);
         } else {
-	        $("<td width='10%'>" + "(無し)" + "</td>").appendTo(str);
+	        $("<td width='7%'>" + "(無し)" + "</td>").appendTo(str);
 
         }
 	    
         // 差分
         if(info[i].url_diff != "" && info[i].url_diff != null) {
-	        $("<td width='10%'><a href='" + info[i].url_diff + "'>" + "差分" + "</a></td>").appendTo(str);
+	        $("<td width='7%'><a href='" + info[i].url_diff + "'>" + "差分" + "</a></td>").appendTo(str);
         } else {
-	        $("<td width='10%'>" + "(同梱譜面)" + "</td>").appendTo(str);
+	        $("<td width='7%'>" + "(同梱譜面)" + "</td>").appendTo(str);
         }
 	    
 	str.appendTo(obj);
