@@ -84,9 +84,6 @@
 
                     // Artist
                     $("<td width='12%'>" + info[i].artist + "</td>").appendTo(str);
-                    
-                    // obj
-                    $("<td width='12%'>" + info[i].obj + "</td>").appendTo(str);
 
                     // url
                     $("<td width='8%'>" + "<a href='" +
@@ -94,12 +91,8 @@
                     
                     // url_diff
                     $("<td width='8%'>" + "<a href='" +
-                        info[i].url_diff + "' target='_blank'>" + "差" + "</a></td>").appendTo(str);
+                        info[i].diffurl + "' target='_blank'>" + "差" + "</a></td>").appendTo(str);
                     
-                    // Comment
-                    $("<td width='32%'>" + info[i].comment + "</td>").appendTo(str);
-                    str.appendTo(obj);
-                    count++;
 
                 }
                 $("</tbody>").appendTo(obj);
