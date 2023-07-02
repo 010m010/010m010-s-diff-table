@@ -159,7 +159,7 @@ function makeBMSTable(info, mark, order) {
         $("<td width='7%'>" + mark + x + "</td>").appendTo(str);
 
 	//AUTO動画
-	if(info[i].video != "" && info[i].video2 != null){
+	if(info[i].video != "" != null){
 		// YouTube
 		$("<td width='2%' align='center'><a href='" + info[i].video + "' target='_blank'><img src='/style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
 	}else{
