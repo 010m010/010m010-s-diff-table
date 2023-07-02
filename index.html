@@ -161,7 +161,7 @@ function makeBMSTable(info, mark, order) {
 	//AUTO動画
 	if(info[i].video != "" && info[i].video != null){
 		// YouTube
-		$("<td width='2%' align='center'><a href='" + info[i].video + "' target='_blank'><img src='/style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
+		$("<td width='2%' align='center'><a href='" + info[i].video + "' target='_blank'><img src='./style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
 	}else{
 		//動画なし
 		$("<td width='2%'></td>").appendTo(str);
